@@ -1,0 +1,110 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+/* STYLE*/
+:root{
+    --form-color: white;
+    --bgr-color: #f7f1e4;
+    --btn-color: #4285F4;
+}
+
+body{
+    background-color: var(--bgr-color);
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#form-area{
+    background-color: var(--form-color);
+    border-radius: 10px;
+    max-width: 950px;
+    max-height: 550px;
+    padding: 50px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+}
+img{
+}
+
+input[type]{
+    border: none;
+    background-color: var(--form-color);
+
+}
+
+fieldset>div{
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+
+div:last-child{
+    border-bottom: none;
+}
+
+button{
+    margin: 30px 0 20px 0;
+    padding: 5px 20px;
+    background-color: var(--btn-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 599px) {
+    #image-div{
+      display: none;
+    }
+
+    #form-area{
+      margin: 0 20px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="form-area">
+        <div id="image-div">
+            <img width="512" alt="Man Working at his Desk Cartoon Vector" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Man_Working_at_his_Desk_Cartoon_Vector.svg">
+        </div>
+    
+        <form action="" method="post">
+            <p>Sign up</p>
+            
+            <fieldset>
+                <div>
+                    <label for="full-name">
+                        <span class="material-symbols-outlined">person</span>
+                    </label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Full Name" required>
+                </div>
+                
+                <div>
+                    <label for="email">
+                        <span class="material-symbols-outlined">mail</span>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div>
+                    <label for="phone-number">
+                        <span class="material-symbols-outlined">call</span>
+                    </label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+                </div>
+                
+                <div>
+                    <label for="password">
+                        <span class="material-symbols-outlined">lock</span>
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                
+                <div>
+                    <label for="confirm-password">
+                        <span class="material-symbols-outlined">lock</span>
+                    </label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm passwrod" required>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="terms-of-service" id="terms-of-service" required>
+                    <label for="terms-of-service">I agree all statements in <a href="" target="_blank" rel="noopener noreferrer">Terms of service</a></label>
+                </div>
+
+            </fieldset>
+    
+            <button type="submit">Create Account</button>
+    
+            <div>Already have an account?<a href="" target="_blank" rel="noopener noreferrer">Log in</a></div>
+        </form>
+    </div>
+
+</body>
+</html>
