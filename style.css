@@ -80,6 +80,10 @@ input[type]{
 
 }
 
+input:focus{
+    outline: none;
+}
+
 fieldset>div{
     border-bottom: 1px solid black;
     margin-top: 20px;
